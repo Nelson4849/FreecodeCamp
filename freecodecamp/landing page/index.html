@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <img id="header-img" src="https://www.warnerwebster.com.au/images/thumbs/0015164_scissors-dressing-sharpblunt-straight-13cm-armo_600.png" alt="hair dryer">
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                <li><a  class="nav-link" href="#commercial">Home</a></li>
+                <li><a  class="nav-link" href="#video">Services</a></li>
+                <li><a  class="nav-link" href="#form">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2 id="commercial">Here's a short commercial of our products</h2>
+        <iframe  id="video" height="315" src="https://www.youtube.com/embed/xN0NneGfLMU" title="YouTube video player"
+         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+         allowfullscreen></iframe>
+    </section>
+    <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <input type="submit" id="submit" value="Submit">
+    </form>
+</body>
+</html>

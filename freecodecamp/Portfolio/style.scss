@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body{
+    font-family: montserrat;
+    margin: 0 auto;
+}
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #247BA0;
+    text-align: right;
+    ul{
+        justify-content: flex-end;
+        display: flex;
+        list-style-type: none;
+        margin: auto;
+    }
+    a{
+        transition: 0.5s;
+        color: #EEEEFF;
+        display: block;
+        padding:1em 2em;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 1rem;
+    }
+    a:hover{
+        background-color: #123c4f;
+        border-radius: 3px;
+    }
+}
+#welcome-section{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    background-color:#DC965A;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    h1{
+        margin: 0;
+        font-size: 4rem;
+    }
+    p{
+        font-size: 2rem;
+    }
+}
+
+img{
+    width: 100%;
+}
+
+#projects{
+    background-color: #CFF27E;
+    padding: 2em 0;
+    h2{
+        text-align: center;
+        font-size: 3rem;
+    }
+}
+
+.concluded{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    
+}
+
+
+.project-tile{
+    transition: 0.3s;
+    background-color: antiquewhite;
+    margin: 1.5rem;
+    text-decoration: none;
+    p{
+        text-align: center;
+        color: black;
+    }
+    p:hover{
+        text-decoration: underline;
+        font-weight: bold;
+        width: auto;
+    }
+}
+.project-tile:hover{
+    transform: scale(1.1);
+}
+
+footer{
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    #navbar {
+        ul{
+            justify-content: center;
+            padding: 0;
+        }
+    }
+    
+}
